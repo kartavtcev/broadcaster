@@ -10,6 +10,7 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
       scalaTest % Test,
       "io.monix" %% "monix" % "3.0.0-RC2",
+      //"io.monix" %% "monix" % "2.3.3",
       "io.monix" %% "monix-nio" % "0.0.3"
     )
   )
