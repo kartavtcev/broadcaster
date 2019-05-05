@@ -8,7 +8,7 @@ object Hello extends App {//extends Greeting with App {
 
   implicit val ctx = monix.execution.Scheduler.Implicits.global
 
-  val callback = new monix.execution.Callback[Throwable, Unit] {
+  val callback = new monix.eval.Callback[Unit] {
     override def onSuccess(value: Unit): Unit = println("Completed")
     override def onError(ex: Throwable): Unit = println(ex)
   }

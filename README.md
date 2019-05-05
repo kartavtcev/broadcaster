@@ -20,10 +20,12 @@ Clean codebase. Large community. Active development. )
 DESICION
 + Akka - no will
 + Monix - not good tcp for prod? Okay for the demo. Check if it works at all, first… yet OKay	Discussed on the interview a lot...  
-!!! monix-nio is only compatible with Monix 2.3.3. No version for Monix 3.0.0-RC2
+There's no monix-nio version for Monix 3.0.0-RC2. Only 3.0.0-RC1 so far.
 
 + FS2/ZIO - too complicated, no time … yet GOOD ALL + TCP is OK… next time for 2+ weeks!
-I need to catch up with it quite a lot.
+I'd need to catch up here.
+FS2 could be used as TCP though: with Monix Task as type parameter. 
+Yet conversion of streams is only possible through reactive streams interface.
 
 
 MONIX  
