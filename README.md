@@ -17,7 +17,7 @@ but for the demo purposes it’s OK, anyway the interviewer advised me to write 
 Clean codebase. Large community. Active development. )
 
 
-DESICION
+DECISION
 + Akka - no will
 + Monix - not good tcp for prod? Okay for the demo. Check if it works at all, first… yet OKay	Discussed on the interview a lot...  
 There's no monix-nio version for Monix 3.0.0-RC2. Only 3.0.0-RC1 so far.
