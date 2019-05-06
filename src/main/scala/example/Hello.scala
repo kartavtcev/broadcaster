@@ -16,11 +16,12 @@ object Hello extends App {//extends Greeting with App {
     override def onSuccess(value: Unit): Unit = println("Completed")
     override def onError(ex: Throwable): Unit = println(ex)
   }
+
   readAsync("localhost", 5555)
     .consumeWith(Consumer.foreach( (c: Array[Byte]) => Console.out.print(parseBytesToString(c) + "\n")))
     .runAsync(callback)
 
-  def parseBytesToString(bytes: Array[Byte]): String = { // 28
+  def parseBytesToString(bytes: Array[Byte]): String = { // 26 // Either if length is less then 1st indicator
     val len = ByteBuffer.wrap(bytes.slice(0, 2)).getShort
 
     //if(len <= bytes.length) {
